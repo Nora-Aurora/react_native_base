@@ -1,5 +1,7 @@
 import { Button, ButtonText } from "@/components/ui/button";
 import { Text, View } from "react-native";
+import { Badge,BadgeText ,BadgeIcon} from "@/components/ui/badge"
+import { AlignHorizontalDistributeStart ,Camera} from 'lucide-react-native';
 
 export default function Index() {
   return (
@@ -14,6 +16,11 @@ export default function Index() {
       <Button size="md" variant="solid" action="primary">
         <ButtonText>Hello World!</ButtonText>
     </Button>
+    <Badge size="md" variant="solid" action="muted">
+  <BadgeText>Verified</BadgeText>
+  
+  <BadgeIcon as={Camera} className="ml-2" />
+</Badge>
     </View>
   );
 }
